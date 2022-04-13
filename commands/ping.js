@@ -5,7 +5,7 @@ module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('ping')
 		.setDescription('Replies with \"Pong!\"'),
-	async execute(interaction) {
+	async execute(interaction, client) {
 		const row = new MessageActionRow()
 			.addComponents(
 				new MessageButton()
